@@ -14,4 +14,13 @@ export class HomeController {
 
         res.render('home/about', { viewData: viewData });
     }
+
+    static contact(req: Request, res: Response): void {
+        const viewData: {[key: string]: any} = {};
+        viewData['title'] = 'Contact';
+        viewData['myName'] = "Santiago Idarraga";
+        viewData['myEmail'] = "sic@mymail.com";
+
+        res.render('home/contact', { viewData: viewData });
+    }
 }
