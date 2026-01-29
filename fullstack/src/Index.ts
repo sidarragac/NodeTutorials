@@ -1,4 +1,5 @@
 import express from 'express';
+import expressLayouts from 'express-ejs-layouts';
 import path from 'path';
 
 import type { Application } from 'express';
@@ -12,7 +13,10 @@ class Index {
 
         app.set('view engine', 'ejs');
         app.set('views', path.join(process.cwd(), 'src/views'));
+        app.set('layout', 'layouts/app');
 
+        app.use(express.static('src/public'));
+        app.use(expressLayouts)
         app.use(Routes.initializeRoutes());
 
         app.listen(PORT, () => {
