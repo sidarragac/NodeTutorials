@@ -6,6 +6,7 @@ export default class Routes {
         const router: Router = Router();
 
         router.get('/', HomeController.index);
+        router.get('/about', HomeController.about);
 
         return router;
     }
