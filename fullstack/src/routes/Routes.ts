@@ -12,6 +12,7 @@ export default class Routes {
         router.get('/contact', HomeController.contact);
         
         router.get('/books', BooksController.index);
+        router.get('/books/:id', BooksController.show);
 
         return router;
     }
