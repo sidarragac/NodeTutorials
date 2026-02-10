@@ -13,7 +13,8 @@ export class BooksController {
     }
 
     static show(req: Request, res: Response): void {
-        const id: number = parseInt(req.params.id);
+        const idParam: string = req.params.id as string;
+        const id: number = parseInt(idParam);
         const book: Book = Book.findById(books, id);
 
         const viewData: {[key: string]: any} = {};
