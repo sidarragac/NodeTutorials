@@ -1,10 +1,10 @@
 export class Book {
     constructor(
-        public id: number,
-        public title: string,
-        public category: string,
-        public price: number,
-        public stock: number
+        private id: number,
+        private title: string,
+        private category: string,
+        private price: number,
+        private stock: number
     ){}
 
     public getId(): number {
