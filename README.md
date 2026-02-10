@@ -4,3 +4,4 @@ Desarrollado siguiendo los tutoriales del curso Ingeniería de Software para Apl
 ## Frameworks trabajados
 
 - Aplicaciones MPA/SSR: [Express.js](./fullstack)
+- Aplicaciones SPA/CSR: [Vue.js](./frontend)
