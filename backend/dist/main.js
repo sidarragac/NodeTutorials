@@ -9,7 +9,7 @@ async function bootstrap() {
         origin: corsOrigins?.length ? corsOrigins : ['http://localhost:5173', 'http://localhost', 'http://127.0.0.1'],
     });
     app.setGlobalPrefix('api');
-    await app.listen(process.env.PORT ?? 3000);
+    await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
 }
 void bootstrap();
 //# sourceMappingURL=main.js.map
