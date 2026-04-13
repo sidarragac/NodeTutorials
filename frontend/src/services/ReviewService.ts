@@ -1,8 +1,9 @@
 import type { ReviewInterface } from '@/interfaces/ReviewInterface';
 import axios from 'axios';
+import process from 'process';
 
 export class ReviewService {
-  private static readonly API_URL = 'http://localhost:3000/api/reviews';
+  private static readonly API_URL = process.env.VITE_API_BASE_URL ? `${process.env.VITE_API_BASE_URL}/api/reviews` : '/api/reviews';
 
   static async getReviews(): Promise<ReviewInterface[]> {
     const { data } = await axios.get(this.API_URL);
