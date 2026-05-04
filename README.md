@@ -6,3 +6,4 @@ Desarrollado siguiendo los tutoriales del curso Ingeniería de Software para Apl
 - Aplicaciones MPA/SSR: [Express.js](./fullstack)
 - Aplicaciones SPA/CSR: [Vue.js](./frontend)
 - Backend: [NestJS](./backend)
+- Nuevas tecnologías (CSR/SSR/SSG): [NuxtJS](./nuxt)
